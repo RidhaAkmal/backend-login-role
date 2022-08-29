@@ -1,7 +1,12 @@
-import Products from "../models/ProductModel.js";
+import Product from "../models/ProductModel.js";
+import argon2 from "argon2";
 
 export const getProducts = (req, res) =>{
-
+    try {
+        
+    } catch (error) {
+        
+    }
 }
 
 export const getProductById = (req, res)=>{

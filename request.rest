@@ -1,0 +1,31 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/c8cab95d-5f31-42e2-8a87-e27d597dadb6
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Ridha Putra",
+    "email": "admin@gmail.com",
+    "password": "akmal",
+    "confPassword": "akmal",
+    "role": "admin"
+}
+
+###
+PATCH http://localhost:5000/users/c8cab95d-5f31-42e2-8a87-e27d597dadb6
+Content-Type: application/json
+
+{
+    "name": "Ridha Akmal Putra",
+    "email": "admin@gmail.com",
+    "password": "",
+    "confPassword": "",
+    "role": "admin"
+}
+
+###
+DELETE http://localhost:5000/users/c8cab95d-5f31-42e2-8a87-e27d597dadb6
