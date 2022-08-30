@@ -8,24 +8,39 @@ POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-    "name": "Ridha Putra",
-    "email": "admin@gmail.com",
-    "password": "akmal",
-    "confPassword": "akmal",
-    "role": "admin"
+    "name": "akmal",
+    "email": "moderator@gmail.com",
+    "password": "123321",
+    "confPassword": "123321",
+    "role": "moderator"
 }
 
 ###
-PATCH http://localhost:5000/users/c8cab95d-5f31-42e2-8a87-e27d597dadb6
+PATCH http://localhost:5000/users/7301dbf9-221f-4dbf-a8a3-750b65ac1bbc
 Content-Type: application/json
 
 {
-    "name": "Ridha Akmal Putra",
+    "name": "ridha",
     "email": "admin@gmail.com",
-    "password": "",
-    "confPassword": "",
+    "password": "123321",
+    "confPassword": "123321",
     "role": "admin"
 }
 
 ###
 DELETE http://localhost:5000/users/c8cab95d-5f31-42e2-8a87-e27d597dadb6
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "123321"
+}
+
+###
+GET http://localhost:5000/me
+
+###
+DELETE http://localhost:5000/logout
