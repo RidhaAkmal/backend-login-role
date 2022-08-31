@@ -8,11 +8,11 @@ POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-    "name": "akmal",
-    "email": "moderator@gmail.com",
+    "name": "ridha",
+    "email": "admin@gmail.com",
     "password": "123321",
     "confPassword": "123321",
-    "role": "moderator"
+    "role": "admin"
 }
 
 ###
@@ -20,11 +20,11 @@ PATCH http://localhost:5000/users/7301dbf9-221f-4dbf-a8a3-750b65ac1bbc
 Content-Type: application/json
 
 {
-    "name": "ridha",
-    "email": "admin@gmail.com",
+    "name": "akmal",
+    "email": "moderator@gmail.com",
     "password": "123321",
     "confPassword": "123321",
-    "role": "admin"
+    "role": "moderator"
 }
 
 ###
@@ -35,7 +35,7 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-    "email": "admin@gmail.com",
+    "email": "putra@gmail.com",
     "password": "123321"
 }
 
@@ -44,3 +44,30 @@ GET http://localhost:5000/me
 
 ###
 DELETE http://localhost:5000/logout
+
+###
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Tempe",
+    "price": "550"
+}
+
+###
+GET http://localhost:5000/products
+
+###
+GET http://localhost:5000/products/509d0740-86f0-42da-b670-30c85f310cac
+
+###
+PATCH http://localhost:5000/products/fe6d853a-65e3-4c82-a7f7-bd30c798da6c
+Content-Type: application/json
+
+{
+    "name": "Tempe",
+    "price": 700
+}
+
+###
+DELETE http://localhost:5000/products/fe6d853a-65e3-4c82-a7f7-bd30c798da6c
